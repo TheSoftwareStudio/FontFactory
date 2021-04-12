@@ -1,7 +1,7 @@
 # FontFactory
 6510 assembler project for Font Factory '89
 
-I developed the Font Factory in 1989 as 'bare metal' 6510 code using a C-64 cartridge. This is a reverse-engineered assembler version of the code published in Volume 2, Number 5 of the Commodore Disk User magazine. The original magazine images are in the docs folder. Enjoy!
+I developed the Font Factory in 1989 as 'bare metal' 6510 code using a C-64 cartridge. This is a reverse-engineered assembler version of the code published in Volume 2, Number 5 of the Commodore Disk User magazine. The original magazine images are in the doc folder. Enjoy!
 
 ## Build
 Use the CBM Prg Studio to compile the project to bin\FontFactory.prg.\
