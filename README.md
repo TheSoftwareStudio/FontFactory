@@ -1,15 +1,13 @@
 # FontFactory
 6510 assembler project for Font Factory '89
 
-I wrote the Font Factory in 1989 and it was published in the Volume 2, Number 5 of the Commodore Disk User magazine.\
-The original magazine images are in the docs folder.\
-Enjoy!
+I developed the Font Factory in 1989 as 'bare metal' 6510 code using a C-64 cartridge. This is a reverse-engineered assembler version of the code published in Volume 2, Number 5 of the Commodore Disk User magazine. The original magazine images are in the docs folder. Enjoy!
 
 ## Build
 Use the CBM Prg Studio to compile the project to bin\FontFactory.prg.\
-Use VICE, or another CBM 64 Emulator, to load the FontFactory.prg.\
+Use VICE, or another CBM 64 Emulator, to load FontFactory.prg.\
 SYS 4096 to run.\
-After initially selecting to edit upper case 'U' or lower case 'L' characters, press 'H' for help.
+Answer 'U' or 'L' to edit upper or lower case characters. Press 'H' for help screens.
 
 ## Design
 Display screen from $0400 to $07FF\
