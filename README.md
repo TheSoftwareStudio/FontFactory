@@ -9,6 +9,7 @@ Enjoy!
 Use the CBM Prg Studio to compile the project to bin\FontFactory.prg.\
 Use VICE, or another CBM 64 Emulator, to load the FontFactory.prg.\
 SYS 4096 to run.\
+After initially selecting to edit upper case 'U' or lower case 'L' characters, press 'H' for help.
 
 ## Design
 Display screen from $0400 to $07FF\
