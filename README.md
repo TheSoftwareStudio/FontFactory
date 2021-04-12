@@ -19,4 +19,4 @@ Program screen data from $4000 to $53FF\
 Program string data from $5400 to $55FF\
 Program vars from $5600 to $57FF\
 Program command map $5800 to $58FF\
-Program screen save area from $5C00 - $5FFF\
+Program screen save area from $5C00 - $5FFF
