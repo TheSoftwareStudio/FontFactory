@@ -1,7 +1,18 @@
 ;===============================================================================
-; Initialize program and variables
+; Initialize functions
 ;===============================================================================
 
+;
+; Utility function : initialize program variables
+;
+; Input:
+;       N/A
+; Output:
+;       N/A
+; Uses:
+;       A reg
+;       X reg
+;
 init
         LDA #<charmembase
         STA charmemposlo
@@ -40,21 +51,28 @@ init
         LDA charcrsrhomecol
         STA charcursorcol+1
 
-        JSR clrlowchrrom
+        LDA #colorwhite
+        JSR setscreencolor
         RTS
 
 ;
-; Utility function : clear $D800 - $DFFF
+; Utility function : set screen colour ($D800 - $DFFF)
 ;
-clrlowchrrom
+; Input:
+;       A reg - color
+; Output:
+;       N/A
+; Uses:
+;       X reg
+;
+setscreencolor
         LDX #$00
 
-nextchrpos
-        LDA #$01
+setpagecolor
         STA lowerchrrom,X
         STA lowerchrrom+$100,X
         STA lowerchrrom+$200,X
         STA lowerchrrom+$300,X
         INX
-        BNE nextchrpos
+        BNE setpagecolor
         RTS
